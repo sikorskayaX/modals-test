@@ -1,0 +1,30 @@
+.test-section{
+	&__title{
+		display: flex;
+	}
+	&__text{
+		width: 80%;
+		margin-bottom: 30px;
+		font-family: Inter;
+		font-size: 20px;
+		font-weight: 800;
+		line-height: 24.2px;
+		text-align: left;
+	}
+
+	&__question{
+		font-family: Montserrat;
+		font-size: 25px;
+		margin-bottom: 20px;
+		font-weight: 500;
+		line-height: 30.48px;
+		text-align: left;		
+	}
+	&__count{
+		font-family: Montserrat;
+		font-size: 25px;
+		font-weight: 500;
+		line-height: 30.48px;
+		color: $green;
+	}
+}

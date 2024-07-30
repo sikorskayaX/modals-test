@@ -1,0 +1,86 @@
+.form-range {
+	width: 100%;
+	
+	&__input {
+	  background-color: $grey;
+	  height: 10px;
+	  border-radius: 5px;
+	  color: $green;
+
+
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+	  
+	}
+  }
+  
+
+  .input-check {
+	vertical-align: middle;
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	outline: 0;
+	flex-grow: 0;
+	background-color: #FFFFFF;
+	transition: background 300ms;
+	cursor: pointer;
+
+	width: 20px;
+	height: 20px;
+
+	background: #FFFFFF;
+	border-radius: 3px;
+
+}
+
+.form-list{
+	width: 100%;
+}
+
+
+.form-check{
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19.5px;
+	&__label {
+		display: flex;
+		align-items: center;
+	  }
+	&__input {
+		-webkit-appearance: none;
+		background: none;
+		border: 0;
+		outline: 0;
+		flex-grow: 0;
+		background-color: #FFFFFF;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		cursor: pointer;
+
+		width: 20px;
+		height: 20px;
+
+		background: #FFFFFF;
+		border-radius: 3px;
+		&::before {
+			content: "";
+			color: transparent;
+			display: block;
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+			border: solid $grey 1px;
+			background-color: transparent;
+			background-size: contain;
+		}
+		&:checked::before{
+			background-image: url("../assets/Vector 1.png");
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

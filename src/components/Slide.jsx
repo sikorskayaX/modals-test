@@ -1,10 +1,11 @@
 import React from 'react';
 
+
 const Slide = ({ question, inputType, options, min, max, value, onChange }) => {
   return (
     <section className="test-section">
+      <p className="test-section__question">{question}</p>
       <div className="test-section__slide">
-        <p className="test-section__question">{question}</p>
         {inputType === 'range' && (
           <form className="form-range">
             <label className="form-range__label">

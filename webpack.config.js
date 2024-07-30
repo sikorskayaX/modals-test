@@ -54,6 +54,11 @@ module.exports = {
               filename: 'fonts/[name][ext]'
           }
           },
+          //svg
+          {
+            test: /\.svg$/,
+            loader: 'svg-inline-loader'
+          },
           // babel
           {
             test: /\.(js|jsx)$/,
@@ -69,6 +74,6 @@ module.exports = {
         ],
       },
       resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['*', '.js', '.jsx', '.svg'],
       },
 }
