@@ -1,7 +1,7 @@
 ﻿import React, { useState } from 'react';
 import Button from './Button';
 import Slide from './Slide';
-import listSvg from '../assets/Mask group.png';
+import { ReactComponent as ListSvg } from '../assets/list.svg';
 
 const ModalWindows = () => {
 
@@ -74,7 +74,7 @@ const ModalWindows = () => {
   return (
     <div className="test">
       <div className='test-section__title'>
-        <img src= {listSvg}/>
+        <ListSvg/>
         <p className="test-section__text">пройдите тест и получите расчёт стоимости построения отдела продаж в вашей компании</p>
         <span className="test-section__count">{currentIndex}/{slidesCount}</span>
       </div>

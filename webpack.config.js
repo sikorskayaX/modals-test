@@ -57,7 +57,7 @@ module.exports = {
           //svg
           {
             test: /\.svg$/,
-            loader: 'svg-inline-loader'
+            use: ['@svgr/webpack', 'file-loader'],
           },
           // babel
           {

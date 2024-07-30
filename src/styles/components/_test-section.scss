@@ -3,13 +3,15 @@
 		display: flex;
 	}
 	&__text{
-		width: 80%;
+		width:90%;
 		margin-bottom: 30px;
 		font-family: Inter;
 		font-size: 20px;
 		font-weight: 800;
 		line-height: 24.2px;
 		text-align: left;
+		text-transform: uppercase;
+		margin: 0 10px;
 	}
 
 	&__question{
