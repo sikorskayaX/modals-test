@@ -1,68 +1,76 @@
+// 1 modal
 .form-range {
 	width: 100%;
-	
-	&__input {
-	  background-color: $grey;
-	  height: 10px;
-	  border-radius: 5px;
-	  color: $green;
-
-
-	  width: 100%;
-	  margin: 0;
-	  padding: 0;
-	  
-	}
-  }
-  
-
-  .input-check {
-	vertical-align: middle;
-	-webkit-appearance: none;
-	background: none;
-	border: 0;
-	outline: 0;
-	flex-grow: 0;
-	background-color: #FFFFFF;
-	transition: background 300ms;
-	cursor: pointer;
-
-	width: 20px;
-	height: 20px;
-
-	background: #FFFFFF;
-	border-radius: 3px;
-
-}
-
-.form-list{
-	width: 100%;
-}
-
-
-.form-check{
 	font-family: Montserrat;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 19.5px;
+
+	&__input {
+		-webkit-appearance: none;
+		appearance: none;
+		height: 15px;
+		border-radius: 5px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		accent-color: $white;
+		background-color: $grey;
+
+		&::-webkit-slider-thumb {
+			height: 19px;
+			cursor: ew-resize;
+		}		
+		&::-webkit-slider-runnable-track{
+			border-radius: 5px;
+			background-color: $green;
+		}
+	}
+	&__values{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+
+//2 modal
+.form-list{
+	width: 692px;
+	height: 28px;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid $grey;
+	appearance: none;
+    background-image: url("../assets/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 670px center;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19.5px;
+}
+
+// 3 modal
+.form-check{
+	width: 100%;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19.5px;
+	
 	&__label {
 		display: flex;
-		align-items: center;
+		
 	  }
 	&__input {
 		-webkit-appearance: none;
 		background: none;
-		border: 0;
-		outline: 0;
-		flex-grow: 0;
 		background-color: #FFFFFF;
 		margin-right: 10px;
 		margin-bottom: 10px;
 		cursor: pointer;
-
 		width: 20px;
 		height: 20px;
-
 		background: #FFFFFF;
 		border-radius: 3px;
 		&::before {
@@ -77,7 +85,7 @@
 			background-size: contain;
 		}
 		&:checked::before{
-			background-image: url("../assets/Vector 1.png");
+			background-image: url("../assets/choice.png");
 			display: inline-block;
 			width: 20px;
 			height: 20px;

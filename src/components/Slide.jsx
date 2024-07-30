@@ -8,7 +8,8 @@ const Slide = ({ question, inputType, options, min, max, value, onChange }) => {
       <div className="test-section__slide">
         {inputType === 'range' && (
           <form className="form-range">
-            <label className="form-range__label">
+            <label className="form-range__label"
+              style={{ backgroundSize: `${(value - {min}) / ({max} - 1) * 100}%`}}>
               <input
                 className="form-range__input"
                 type="range"
@@ -17,20 +18,22 @@ const Slide = ({ question, inputType, options, min, max, value, onChange }) => {
                 value={value}
                 onChange={onChange}
               />
-              <div className="form-range__label-value">{value}</div>
+              <div 
+              className="form-range__label-value"
+              ></div>
             </label>
+            <div className='form-range__values'>
+              <span>{min}</span>
+              <span>{max}</span>
+            </div>
           </form>
         )}
         {inputType === 'list' && (
-          <form className="form-list">
-            <label className="form-list__label">
-              <select>
+              <select className="form-list">
                 {options.map((option, index) => (
                   <option key={index} value={option}>{option}</option>
                 ))}
               </select>
-            </label>
-          </form>
         )}
         {inputType === 'checkbox' && (
           <form className="form-check">

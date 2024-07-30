@@ -81,7 +81,7 @@ const ModalWindows = () => {
       <div className="test__slide">{renderSlide()}</div>
       <div className="test__buttons">
         <Button onClick={handlePrevClick} type = 'prev' text="назад" disabled={currentIndex === 1} />
-        <Button onClick={handleNextClick} type = 'next' text = "вперед" disabled={currentIndex === slidesCount} />
+        <Button onClick={handleNextClick} type = 'next' text = "далее" disabled={currentIndex === slidesCount} />
       </div>
     </div>
   );
