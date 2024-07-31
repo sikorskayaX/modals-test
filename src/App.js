@@ -9,8 +9,7 @@ const App = () => {
 
   return (
     <>
-      {!isProcess && <Button onClick={openTest} type = 'start' text = 'начать тест'/>}
-      {isProcess &&  <ModalWindows/>}
+      {isProcess ?  <ModalWindows/> : <Button onClick={openTest} type = 'start' text = 'начать тест'/>}
     </>
   )
 }

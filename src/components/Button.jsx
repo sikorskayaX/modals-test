@@ -1,18 +1,18 @@
 ﻿import React from 'react';
+import classNames from 'classnames';
 
-const Button = ({ onClick, type, text, disabled = false }) => {
-
+const Button = ({ text, ...props }) => {
+    const buttonClasses = classNames('test__button', props.type);
     return (
-      <>
-        <button 
-            className= {`test__button ${type}`}
-            onClick={ onClick }
-            disabled = {disabled}
+        <button
+        className={buttonClasses}
+        onClick={props.onClick}
+        disabled={props.disabled}
+        {...props}
         >
         {text}
         </button>
-      </>
-    )
-  }
-  
-  export default Button
+  );
+};
+
+export default Button;
