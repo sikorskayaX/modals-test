@@ -2,7 +2,7 @@
 import classNames from 'classnames';
 
 const Button = ({ text, ...props }) => {
-    const buttonClasses = classNames('test__button', props.type);
+    const buttonClasses = classNames('button', props.type);
     return (
         <button
         className={buttonClasses}

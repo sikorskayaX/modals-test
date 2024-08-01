@@ -6,7 +6,7 @@ const SourcesCheckbox = ({options}) =>{
 		  {options?.map((option, index) => (
 			<label key={index} className="form-check__label">
 			  <input className="form-check__input" type="checkbox" />
-			  <p className="form-check__label-text">{option}</p>
+			  <p className="form-check__text">{option}</p>
 			</label>
 		  ))}
 		</form>

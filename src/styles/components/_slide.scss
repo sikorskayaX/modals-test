@@ -1,0 +1,6 @@
+.slide{
+	width: 100%;
+	&__question{
+		@include montserratUpFont($dark-grey);	
+	}
+}

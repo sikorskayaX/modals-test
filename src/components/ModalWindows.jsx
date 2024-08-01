@@ -52,12 +52,12 @@ const ModalWindows = () => {
 
   return (
     <div className="test">
-      <div className='test-section__title'>
+      <div className='test__title'>
         <ListSvg/>
-        <p className="test-section__text">пройдите тест и получите расчёт стоимости построения отдела продаж в вашей компании</p>
-        <span className="test-section__count">{currentIndex}/{slidesCount}</span>
+        <p className="test__text">пройдите тест и получите расчёт стоимости построения отдела продаж в вашей компании</p>
+        <span className="test__count">{currentIndex}/{slidesCount}</span>
       </div>
-      <div className="test__slide"><Slide {...slidesProps[currentIndex - 1]}/></div>
+      <Slide {...slidesProps[currentIndex - 1]}/>
       <div className="test__buttons">
         <Button onClick={handlePrevClick} type = 'prev' text="назад" disabled={currentIndex === 1} />
         <Button onClick={handleNextClick} type = 'next' text = "далее" disabled={currentIndex === slidesCount} />

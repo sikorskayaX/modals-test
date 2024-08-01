@@ -1,0 +1,42 @@
+// 3 modal
+.form-check{
+
+	&__label {
+		display: flex;
+		align-items: center;
+	}
+
+	&__text{
+		@include montserratSmallFont($dark-grey);
+		margin: 5px;
+	}
+
+	&__input {
+		-webkit-appearance: none;
+		background: none;
+		background-color: #FFFFFF;
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+		border-radius: 3px;
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			color: transparent;
+			display: block;
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+			border: solid $grey 1px;
+			background-color: transparent;
+			background-size: contain;
+		}
+
+		&:checked::before{
+			background-image: url("../assets/choice.png");
+			width: 20px;
+			height: 20px;
+		}
+	}
+}

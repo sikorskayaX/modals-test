@@ -1,0 +1,29 @@
+// 1 modal
+.form-range {
+
+	&__input {
+		-webkit-appearance: none;
+		appearance: none;
+		height: 15px;
+		border-radius: 5px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		accent-color: $white;
+		background-color: $grey;
+
+		&::-webkit-slider-thumb {
+			height: 19px;
+			cursor: ew-resize;
+		}		
+		&::-webkit-slider-runnable-track{
+			border-radius: 5px;
+			background-color: $green;
+		}
+	}
+	&__values{
+		display: flex;
+		justify-content: space-between;
+		@include montserratSmallFont($dark-grey);
+	}
+}

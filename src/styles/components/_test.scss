@@ -7,40 +7,28 @@
 	min-height: 343px;
 	max-height: 566px;
 	padding: 50px;
-	gap: 30px;
 	border-radius: 15px;
 	background-color: $white;
+
 	&__buttons{
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
 	}
-	&__button{
-		width: 116px;
-		height: 44px;
-		padding: 10px 20px 10px 20px;
-		border-radius: 10px;
-		background-color: $green;
-		font-size: 20px;
-		font-weight: 800;
-		line-height: 24.2px;
-		text-align: center;
-		text-transform: uppercase;
-		border: none;
-		color: $white;
-		&:hover{
-			color: $dark-grey;
-		}
-		&:active{
-			box-shadow: -3px 3px 12.8px 0px #00000040 inset;
-		}
+
+	&__title{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__text{
+		@include interUpFont($dark-grey);
+		width: 80%;
+	}
+
+	&__count{
+		@include montserratUpFont($green);
 	}
 }
 
-.prev{
-	background-color: $grey;
-}
-.start{
-	background-color: $grey;
-	width: 250px;
-}
