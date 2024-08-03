@@ -4,7 +4,7 @@ const ActivitiesList = ({options}) =>{
 	return(
 		<select className="form-list">
 		  {options?.map((option, index) => (
-			<option key={index} value={option}>{option}</option>
+			<option className="form-list__option" key={index} value={option}>{option}</option>
 		  ))}
 		</select>
 	)
