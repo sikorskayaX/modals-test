@@ -1,5 +1,10 @@
 // 1 modal
 .form-range {
+	position: relative;
+
+	&__label-value{
+		position: absolute;
+	}
 
 	&__input {
 		-webkit-appearance: none;
@@ -9,18 +14,27 @@
 		width: 100%;
 		margin: 0;
 		padding: 0;
-		accent-color: $white;
-		background-color: $grey;
 
 		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			box-shadow: 0px 2px 5.8px 0px #00000026;
+			position: relative;
 			height: 19px;
-			cursor: ew-resize;
+			width: 19px;
+			margin-top: -2px;
+			background-color: $white;
+			border-radius: 10px;
 		}		
 		&::-webkit-slider-runnable-track{
+			height: 15px;
 			border-radius: 5px;
-			background-color: $green;
+
 		}
 	}
+	&__label-value{
+		@include montserratSmallFont($dark-grey);
+	}
+
 	&__values{
 		display: flex;
 		justify-content: space-between;
