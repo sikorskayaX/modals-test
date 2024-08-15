@@ -1,0 +1,25 @@
+@mixin interUpFont($color){
+	color: $color;
+	font-family: Inter;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 24.2px;
+	text-transform: uppercase;
+
+}
+
+@mixin montserratUpFont($color){
+	font-family: Montserrat;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 30.48px;
+	color: $color;
+}
+
+@mixin montserratSmallFont ($color: $dark-grey) {
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19.5px;
+	color: $color;
+}

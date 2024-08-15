@@ -1,1 +1,26 @@
-﻿
+.button{
+	@include interUpFont($white);
+
+	width: 116px;
+	height: 44px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+	border: none;
+	background-color: $green;
+
+	&:hover{
+		color: $dark-grey;
+	}
+	&:active{
+		box-shadow: -3px 3px 12.8px 0px #00000040 inset;
+	}
+}
+
+.prev{
+	background-color: $grey;
+}
+.start{
+	background-color: $grey;
+	width: 250px;
+}

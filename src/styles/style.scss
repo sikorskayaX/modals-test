@@ -1,9 +1,16 @@
 ﻿@import './utils/variables';
+@import './utils/mixins';
 
 @import './layout/layout';
+@import './layout/normalize';
 
 @import './base/fonts';
 
 @import './core/typography';
 
+@import './components/test';
+@import './components/slide';
+@import './components/form-check';
+@import './components/form-list';
+@import './components/form-range';
 @import './components/button';
